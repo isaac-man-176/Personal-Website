@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Chrome",
-            "request": "launch",
             "type": "chrome",
-            "url": "https://isaac-man-176.github.io/website.github.io/",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "file:///C:/Users/Isaac%20Man/Downloads/website.github.io/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
