@@ -8,7 +8,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "file:///C:/Users/Isaac%20Man/Downloads/Personal-Website/home.html",
+            "url": "https://isaac-man-176.github.io/Personal-Website/",
             "webRoot": "${workspaceFolder}"
         }
     ]
