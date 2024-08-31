@@ -15,26 +15,32 @@ header{
     text-align: center;
     flex-direction: row;
     font-family: sans-serif;
-    height: 60px;
+    height: 70px;
     z-index: 100; /* Ensure header is on top of other elements */
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
     width:100%;
     top: 0px;
     justify-content: center;
+    vertical-align: middle;
+    font-size: 30px !important;
 }
 
 .pages a {
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     margin: -3px;
     transition: 0.4s;
-    font-size: 30px;
+    font-size: 30px !important;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     z-index: 101; /* Ensure links are on top of the header background */
     position: relative;
+    height: 35px;
+    vertical-align: middle;
 }
 
 .pages a:hover {
@@ -108,4 +114,8 @@ footer {
     text-align: center;
     color: white;
     padding-bottom: 25px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
