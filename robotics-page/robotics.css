@@ -1,40 +1,100 @@
-body{
+body {
     background-color: black;
     font-family: sans-serif;
-    width: 100%;
-    height: 100%
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
-.pages a{
+
+header{
+    position: relative;
+}
+
+.pages {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    font-family: sans-serif;
+    height: 70px;
+    z-index: 100; /* Ensure header is on top of other elements */
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    width:100%;
+    top: 0px;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 30px !important;
+    text-justify: bottom !important;
+}
+
+.pages a {
     color: white;
     text-decoration: none;
-    width: 60ox;
     padding: 10px;
-    padding-right: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     margin: -3px;
     transition: 0.4s;
-    font-size: 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    z-index: 101; /* Ensure links are on top of the header background */
+    position: relative;
+    vertical-align: middle;
+    height: 35px;
 }
-.pages a:hover{
+
+.pages a:hover {
     color: black;
     background-color: white;
     transition: 0.4s;
 }
-.pages {
-    justify-content: center;
-    z-index: 2;
-    text-align: center;
+
+.banner-container {
+    width: 100%;
+    position: relative; /* Container should position itself relative to the page */
+    z-index: 50; /* Lower z-index to allow content to be layered above it */
 }
+
 .banner {
     width: 100%;
     height: auto;
     display: block;
     position: relative; /* Use relative positioning for normal flow */
     top: 0px;
-    padding: 0px;
+}
+
+.heading-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for readability */
     z-index: 1;
+    margin-top: 20px; /* Space below the banner */
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+}
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 20px;
+    background-color: rgb(24, 24, 24);
+    text-align: center;
+    color: white;
+    padding-bottom: 25px;
+}
+
+.content {
+    padding: 20px; /* Increased padding for spacing */
+    position: relative;
+    margin-top: 20px; /* Added margin to create space between the heading and the content */
+    color: white;
 }
 .avidrop{
     color: white;
@@ -46,11 +106,13 @@ body{
     font-size: 30px;
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
+    height: auto !important;
+    font-size: 30px;
 }
 /* Styles for the dropdown */
 .dropdown {
     position: relative;
-    display: inline-block;
+    padding-top: 5px;
 }
 
 .dropdown-content { 
@@ -73,4 +135,34 @@ body{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.content{
+    padding: 20px;
+    color: white;
+    text-align: left;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 60px;
+    position: relative;
+}
+.img{
+    height: 400px;
+}
+.large{
+    height: 700px
+}
+
+.banner-container {
+    width: 100%;
+    position: relative; /* Container should position itself relative to the page */
+    z-index: 50; /* Lower z-index to allow content to be layered above it */
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative; /* Use relative positioning for normal flow */
+    top: 0px;
 }
