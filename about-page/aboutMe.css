@@ -32,7 +32,6 @@ header {
     transition: 0.4s;
 }
 h1{
-    text-align: left;
     font-size: 60px;
     color: white;
     font-family: sans-serif;
@@ -41,6 +40,7 @@ h1{
     padding: 20px;
     padding-left: 20%;
     padding-right: 20%;
+    text-align: center;
 }
 p{
     font-size: auto;
