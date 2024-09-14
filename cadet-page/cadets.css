@@ -139,8 +139,10 @@ footer {
 .content{
     padding: 20px;
     color: white;
-    text-align: left;
+    text-align: center;
     font-family: sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 h1{
     font-size: 60px;

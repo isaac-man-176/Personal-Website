@@ -95,6 +95,8 @@ footer {
     position: relative;
     margin-top: 20px; /* Added margin to create space between the heading and the content */
     color: white;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .avidrop{
     color: white;
@@ -150,7 +152,7 @@ h1{
     height: 400px;
 }
 .large{
-    height: 700px
+    height: 500px
 }
 
 .banner-container {
